@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | PIXEL PRO</title>
+<meta name="description" content="Contactez PIXEL PRO par WhatsApp, par téléphone ou en boutique à Douala et Yaoundé. Horaires et formulaire de contact.">
+<meta name="theme-color" content="#0b1b3a">
+<link rel="canonical" href="https://VOTRE-DOMAINE.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PIXEL PRO">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Contact | PIXEL PRO">
+<meta property="og:description" content="Contactez PIXEL PRO par WhatsApp, par téléphone ou en boutique à Douala et Yaoundé. Horaires et formulaire de contact.">
+<meta property="og:url" content="https://VOTRE-DOMAINE.com/contact.html">
+<meta property="og:image" content="https://VOTRE-DOMAINE.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow-semi-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<noscript><style>main > * { visibility: visible !important; }</style></noscript>
+<script src="js/config.js"></script>
+<script>
+/* Avant le premier affichage : réserve la place du bandeau démo, et révèle la page même si un script échoue. */
+(function (d) {
+  var c = window.PIXELPRO_CONFIG;
+  if (c && c.demo && c.demo.enabled) d.classList.add('is-demo');
+  setTimeout(function () { d.classList.add('pp-ready'); }, 5000);
+})(document.documentElement);
+</script>
+<script src="data/catalogue.js" defer></script>
+<script src="js/icons.js" defer></script>
+<script src="js/core.js" defer></script>
+<script src="js/ui.js" defer></script>
+<script src="js/pages/contact.js" defer></script>
+</head>
+<body data-nav="contact">
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header" id="site-header"></header>
+<main id="contenu">
+<section class="page-head"><div class="container">
+<nav aria-label="Fil d'Ariane"><ol class="breadcrumb"><li><a href="index.html">Accueil</a></li><li aria-current="page">Contact</li></ol></nav>
+<h1>Contact</h1>
+<p class="lead">Le moyen le plus rapide pour commander ou poser une question est WhatsApp. Vous pouvez aussi nous appeler ou passer en boutique.</p>
+</div></section>
+<section class="section section--tight" aria-labelledby="h-coordonnees"><div class="container split">
+<div><h2 id="h-coordonnees" class="h-gap">Nos coordonnées</h2><div class="contact-list" id="contact-info"></div></div>
+<div><h2 id="h-formulaire" class="h-gap-sm">Écrire à la boutique</h2>
+<p class="p-gap-after">Remplissez le formulaire : votre message est préparé et s'ouvre dans WhatsApp, prêt à être envoyé.</p>
+<form class="form" id="contact-form" novalidate aria-labelledby="h-formulaire">
+<div class="form__row form__row--2">
+<div class="field"><label class="field__label" for="name">Votre nom</label><input class="input" id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error"><p class="field__error" id="name-error"></p></div>
+<div class="field"><label class="field__label" for="phone">Téléphone (facultatif)</label><input class="input" id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel"></div>
+</div>
+<div class="field"><label class="field__label" for="topic">Sujet</label><select class="select" id="topic" name="topic"><option>Commander un produit</option><option>Disponibilité d'un produit</option><option>Livraison ou retrait en boutique</option><option>Autre question</option></select></div>
+<div class="field"><label class="field__label" for="message">Votre message</label><textarea class="textarea" id="message" name="message" required aria-describedby="message-error"></textarea><p class="field__error" id="message-error"></p></div>
+<div><button class="btn btn--wa btn--lg" type="submit"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>Envoyer sur WhatsApp</button></div>
+<p class="field__hint" id="form-status" role="status"></p>
+</form></div>
+</div></section>
+
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

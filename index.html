@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PIXEL PRO | Consoles PS5, PS4, manettes et jeux au Cameroun</title>
+<meta name="description" content="Trouvez votre console PlayStation, vos manettes et vos jeux en FCFA. Consultez les produits PIXEL PRO et commandez sur WhatsApp à Douala et Yaoundé.">
+<meta name="theme-color" content="#0b1b3a">
+<link rel="canonical" href="https://VOTRE-DOMAINE.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PIXEL PRO">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="PIXEL PRO | Consoles PS5, PS4, manettes et jeux au Cameroun">
+<meta property="og:description" content="Trouvez votre console PlayStation, vos manettes et vos jeux en FCFA. Consultez les produits PIXEL PRO et commandez sur WhatsApp à Douala et Yaoundé.">
+<meta property="og:url" content="https://VOTRE-DOMAINE.com/">
+<meta property="og:image" content="https://VOTRE-DOMAINE.com/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/barlow-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/barlow-semi-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/site.css">
+<noscript><style>main > * { visibility: visible !important; }</style></noscript>
+<script src="js/config.js"></script>
+<script>
+/* Avant le premier affichage : réserve la place du bandeau démo, et révèle la page même si un script échoue. */
+(function (d) {
+  var c = window.PIXELPRO_CONFIG;
+  if (c && c.demo && c.demo.enabled) d.classList.add('is-demo');
+  setTimeout(function () { d.classList.add('pp-ready'); }, 5000);
+})(document.documentElement);
+</script>
+<script src="data/catalogue.js" defer></script>
+<script src="data/avis.js" defer></script>
+<script src="js/icons.js" defer></script>
+<script src="js/core.js" defer></script>
+<script src="js/ui.js" defer></script>
+<script src="js/pages/home.js" defer></script>
+</head>
+<body data-nav="accueil">
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<header class="site-header" id="site-header"></header>
+<main id="contenu">
+<section class="hero" aria-labelledby="hero-title"><div class="container hero__grid">
+<div class="hero__copy">
+<h1 id="hero-title">Consoles PlayStation, manettes et jeux à Douala et Yaoundé</h1>
+<p class="lead">Comparez les prix en FCFA, ajoutez vos produits à votre sélection et envoyez votre commande sur WhatsApp. Nous confirmons la disponibilité avant tout paiement.</p>
+<div class="btn-row"><a class="btn btn--primary btn--lg" href="consoles-ps5.html">Voir les consoles PS5</a><a class="btn btn--wa btn--lg" data-wa="general"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>Écrire sur WhatsApp</a></div>
+<ul class="pixel-list hero__facts" id="hero-facts"></ul>
+</div>
+<div class="board"><h2 class="board__title">Nos rayons</h2><ul id="board-rows"></ul></div>
+</div></section>
+
+<section class="section" aria-labelledby="h-selection"><div class="container">
+<div class="section__head"><h2 id="h-selection">Sélection de la boutique</h2></div>
+<div class="grid grid--cards" id="featured"></div>
+</div></section>
+
+<section class="section section--tight" aria-labelledby="h-offres"><div class="container">
+<div class="section__head"><h2 id="h-offres">Offres du moment</h2><a class="section__link" href="promotions.html">Toutes les promotions et tous les packs</a></div>
+<div class="grid grid--cards" id="deals"></div>
+</div></section>
+
+<section class="band section" aria-labelledby="h-commander"><div class="container">
+<div class="section__head"><h2 id="h-commander">Comment commander</h2></div>
+<ol class="steps">
+<li><div><h3>Choisissez vos produits</h3><p>Parcourez les rayons, comparez les prix et ajoutez ce qui vous intéresse à votre sélection. Pour un seul article, le bouton WhatsApp de la fiche suffit.</p></div></li>
+<li><div><h3>Envoyez la commande sur WhatsApp</h3><p>Le message est déjà rédigé : produits, références, quantités et prix affichés. Il ne reste qu'à l'envoyer.</p></div></li>
+<li><div><h3>Nous confirmons avec vous</h3><p>Nous vérifions la disponibilité, puis nous convenons avec vous de la livraison ou du retrait et du paiement.</p></div></li>
+</ol>
+</div></section>
+
+<section class="section" aria-labelledby="h-conditions"><div class="container">
+<div class="section__head"><h2 id="h-conditions">Livraison, paiement et garantie</h2></div>
+<div class="info-grid info-grid--4" data-fill="commerce"></div>
+</div></section>
+
+<section class="band section" id="avis" aria-labelledby="h-avis" hidden><div class="container">
+<div class="section__head"><h2 id="h-avis">Avis de nos clients</h2></div>
+<div class="review-list" id="avis-list"></div>
+</div></section>
+
+<section class="section" aria-labelledby="h-boutiques"><div class="container split">
+<div><h2 id="h-boutiques" class="h-gap">Boutiques et horaires</h2><div data-fill="locations"></div></div>
+<div><h2 class="h-gap">Horaires d'ouverture</h2><dl class="hours" data-fill="hours"></dl>
+<p class="p-gap"><a class="btn btn--wa" data-wa="visit"><svg class="icon icon--brand" aria-hidden="true" focusable="false"><use href="#i-whatsapp"/></svg>Confirmer l'adresse sur WhatsApp</a></p></div>
+</div></section>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/*
+ * PIXEL PRO — design tokens
+ * Toutes les valeurs de design (couleurs, typographie, espacements) vivent ici.
+ * Les composants (site.css) n'utilisent que ces variables.
+ */
+
+/* ---- Polices auto-hébergées (sous-ensemble latin, licence OFL) ---- */
+@font-face {
+  font-family: 'Barlow'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url('../assets/fonts/barlow-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow'; font-style: normal; font-weight: 500; font-display: swap;
+  src: url('../assets/fonts/barlow-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url('../assets/fonts/barlow-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow Semi Condensed'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url('../assets/fonts/barlow-semi-condensed-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Barlow Semi Condensed'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url('../assets/fonts/barlow-semi-condensed-latin-700-normal.woff2') format('woff2');
+}
+
+:root {
+  color-scheme: light;
+
+  /* ---- Couleurs ----
+     Encre : bleu nuit profond, utilisé pour le texte fort, l'en-tête et le pied de page.
+     Bleu console : actions secondaires, liens, focus.
+     Vert WhatsApp : réservé aux actions de commande WhatsApp, nulle part ailleurs.
+     Rouge promo : réservé aux économies et aux remises. */
+  --ink-900: #0b1b3a;
+  --ink-700: #2b3a57;
+  --ink-500: #5a6782;
+  --line: #d9dfe9;
+  --line-strong: #b9c3d5;
+
+  --bg: #f3f5f8;
+  --surface: #ffffff;
+  --surface-2: #e9edf3;
+
+  --blue-600: #0a5be0;
+  --blue-700: #0848b3;
+  --blue-300: #8db5ff;
+  --blue-50: #e8f0fd;
+
+  --wa: #0f7f43;
+  --wa-hover: #0b6a38;
+
+  --promo: #c0271d;
+  --warn-700: #7a4f00;
+  --warn-50: #fff3d6;
+  --ok-700: #0f7f43;
+
+  --on-dark: #ffffff;
+  --on-dark-muted: rgba(255, 255, 255, 0.78);
+  --line-on-dark: rgba(255, 255, 255, 0.16);
+
+  /* ---- Typographie ---- */
+  --font-body: 'Barlow', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Barlow Semi Condensed', 'Barlow', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+
+  --fs-xs: 0.8125rem;                                          /* 13 px, minimum du site */
+  --fs-sm: 0.9375rem;                                          /* 15 px */
+  --fs-md: 1rem;                                               /* 16 px */
+  --fs-lg: 1.125rem;
+  --fs-h3: clamp(1.125rem, 1.06rem + 0.3vw, 1.3125rem);
+  --fs-h2: clamp(1.5rem, 1.3rem + 0.9vw, 2rem);
+  --fs-h1: clamp(1.875rem, 1.45rem + 2vw, 2.875rem);
+
+  /* ---- Espacements (base 4 px) ---- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 88px;
+
+  --gutter: 16px;
+  --container: 1200px;
+  --section-y: 48px;
+
+  /* ---- Formes ---- */
+  --r-sm: 4px;
+  --r-md: 6px;
+
+  /* ---- Divers ---- */
+  --header-h: 64px;
+  --tap: 44px;                                                 /* hauteur minimale d'une cible tactile */
+  --focus: #0a5be0;
+  --shadow-overlay: 0 8px 24px rgba(11, 27, 58, 0.18);
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 24px; --section-y: 64px; }
+}
+@media (min-width: 1200px) {
+  :root { --gutter: 32px; --section-y: 80px; }
+}

@@ -1,0 +1,4 @@
+Déposez ici les vraies photos des produits (JPEG ou WebP, 4:3, environ 1200 x 900 px, moins de 150 Ko).
+Puis citez le nom du fichier dans le champ "images" du produit, dans data/catalogue.js.
+Exemple : images: ['ps5-slim-1.jpg', 'ps5-slim-2.jpg']
+Voir README.md, point 3.
